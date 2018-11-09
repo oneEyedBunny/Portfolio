@@ -1,0 +1,134 @@
+body {
+  margin: 0;
+  padding: 0;
+  /* font-size: calc(15px + (26 - 15) * ((100vw - 320px) / (1000 - 320))); */
+  /* font-family: 'Nunito', serif; */
+  /* background: url('http://thecodeplayer.com/uploads/media/geometry.png'); */
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+/* ************************universal************************** */
+a {
+  text-decoration: none;
+  color: #A5142D;
+}
+
+.navigation-container {
+  position: absolute;
+  bottom: 30px;
+}
+
+.section-container {
+  min-height: 100vh;
+}
+
+#section-2, #section-3, #section-4 {
+  display: flex;
+}
+
+.left-section, .right-section {
+  flex: 2;
+}
+
+.left-section > h2 {
+  text-align: center;
+}
+
+h1 {
+  text-align: center;
+}
+
+
+/* ************************section-1************************** */
+#section-1 {
+  background-color: #BFABAA;
+  color: #464646;
+}
+
+#tag-line {
+    text-align: center;
+}
+
+/* ************************section-2************************** */
+#about-me-left {
+  background-color: #464646;
+  color: white;
+}
+
+#about-me-right {
+  background-color: #BFABAA;
+  color: #464646;
+}
+
+#learning {
+  text-align: center;
+}
+
+#learning h4 {
+  display: inline-block;
+}
+
+#learning h4:first-child {
+  color: #A5142D
+}
+
+/* ************************section-3************************** */
+#projects-left {
+  background-color: #BFABAA;
+  color: #A5142D;
+}
+
+#projects-right {
+  background-color: #EEEEEE;
+  color: #464646;
+}
+
+.project-description {
+  background-color: #464646;
+  color: white;
+}
+
+#project-mini-nav {
+  text-align: center;
+}
+
+#project-mini-nav > a {
+  color: #464646;
+}
+
+#project-mini-nav > h2 {
+
+  display: inline-block;
+}
+
+/* ************************section-4************************** */
+#contact-left {
+  background-color: #A5142D;
+  color: white;
+}
+
+#contact-right {
+  background-color: #BFABAA;
+  color: #464646;
+}
+
+#contact-links-container {
+  text-align: center;
+}
+
+.contact-img-container {
+  display: inline-block;
+}
+
+/* ************************section-1************************** */
+#section-5 {
+  background-color: #464646;
+  color: #E0D1D0;
+}
