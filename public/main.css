@@ -3,7 +3,7 @@
   padding: 0;
   border: 0;
   outline: 0;
-  font-size: calc(15px + (26 - 15) * ((100vw - 320px) / (1000 - 320)));
+  font-size: calc(14px + (24 - 14) * ((100vw - 320px) / (1000 - 320)));
   font-family: 'KoHo', sans-serif;
   /* background: url('http://thecodeplayer.com/uploads/media/geometry.png'); */
 }
@@ -63,6 +63,7 @@ font-size: calc(14px + (20 - 14) * ((100vw - 320px) / (1000 - 320)));
 
 .right-scroll-container {
   overflow-y: auto;
+  padding: 15px;
 }
 
 .left-section h2 {
@@ -107,8 +108,12 @@ font-size: calc(14px + (20 - 14) * ((100vw - 320px) / (1000 - 320)));
   display: block;
 }
 
+#about-me-right p:first-child {
+  margin-top: 100px;
+}
+
 #about-me-right > p {
-  margin: 45px 0;
+  margin: 38px;
 }
 
 #learning {
@@ -199,8 +204,15 @@ font-size: calc(14px + (20 - 14) * ((100vw - 320px) / (1000 - 320)));
   color: #464646;
 }
 
-#contact-right> p {
-  margin: 25px 0;
+.right-contact-container {
+  padding: 25px;
+}
+.right-contact-container p:first-child {
+  margin-top: 150px;
+}
+
+.right-contact-container > h4 {
+  margin: 45px 0;
 }
 
 #contact-links-container {
