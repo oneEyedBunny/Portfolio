@@ -1,17 +1,23 @@
-body {
+* {
   margin: 0;
   padding: 0;
-  /* font-size: calc(15px + (26 - 15) * ((100vw - 320px) / (1000 - 320))); */
-  /* font-family: 'Nunito', serif; */
+  border: 0;
+  outline: 0;
+  font-size: calc(15px + (26 - 15) * ((100vw - 320px) / (1000 - 320)));
+  font-family: 'KoHo', sans-serif;
   /* background: url('http://thecodeplayer.com/uploads/media/geometry.png'); */
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
 }
 
 html {
   box-sizing: border-box;
 }
 
-*, *:before, *:after {
-  box-sizing: inherit;
+h2 {
+font-size: calc(20px + (35 - 20) * ((100vw - 320px) / (1000 - 320)));
 }
 
 /* ************************universal************************** */
@@ -23,6 +29,12 @@ a {
 .navigation-container {
   position: absolute;
   bottom: 30px;
+  text-align: center;
+  width: 100%;
+}
+
+.link {
+font-size: calc(14px + (20 - 14) * ((100vw - 320px) / (1000 - 320)));
 }
 
 .section-container {
@@ -34,17 +46,29 @@ a {
 }
 
 .left-section, .right-section {
-  flex: 2;
-}
-
-.left-section > h2 {
+  /* padding: 20px; */
   text-align: center;
+  flex: 1;
+  display: flex;
 }
 
-h1 {
-  text-align: center;
+.left-section {
+  display: flex;
+  flex-direction: column;
 }
 
+ .right-section {
+  height: 100vh;
+}
+
+.right-scroll-container {
+  overflow-y: auto;
+}
+
+.left-section h2 {
+  margin: auto;
+  font-family: 'Poiret One', cursive;
+}
 
 /* ************************section-1************************** */
 #section-1 {
@@ -54,6 +78,21 @@ h1 {
 
 #tag-line {
     text-align: center;
+    padding-top: 30px;
+}
+
+#name-container {
+  display: flex;
+}
+
+#name {
+  font-family: 'Poiret One', cursive;
+  font-size: 45px;
+  margin: auto;
+}
+
+.hex-img {
+  width: 3%
 }
 
 /* ************************section-2************************** */
@@ -65,10 +104,18 @@ h1 {
 #about-me-right {
   background-color: #BFABAA;
   color: #464646;
+  display: block;
+}
+
+#about-me-right > p {
+  margin: 45px 0;
 }
 
 #learning {
+  margin-top: 250px;
   text-align: center;
+  /* position: relative;
+  bottom: 30px; */
 }
 
 #learning h4 {
@@ -79,7 +126,17 @@ h1 {
   color: #A5142D
 }
 
+#left-about-container {
+  display: flex
+}
+
+#left-about-container > h2 {
+  margin: auto;
+  flex: 1;
+}
+
 /* ************************section-3************************** */
+
 #projects-left {
   background-color: #BFABAA;
   color: #A5142D;
@@ -90,22 +147,45 @@ h1 {
   color: #464646;
 }
 
+.project-container {
+  margin: 45px 15px;
+}
+
+.project-img-container {
+  margin: 15px 0
+}
+
 .project-description {
   background-color: #464646;
   color: white;
+  padding: 15px;
+  text-align: center;
 }
 
-#project-mini-nav {
-  text-align: center;
+#projects-left-container {
+  margin: auto;
 }
 
 #project-mini-nav > a {
   color: #464646;
+  font-size: calc(12px + (17 - 12) * ((100vw - 320px) / (1000 - 320)));
 }
 
 #project-mini-nav > h2 {
-
   display: inline-block;
+}
+
+.project-image {
+  width: 100%;
+}
+
+.gh-img-container {
+  margin: 15px auto;
+  width: 12%;
+}
+
+.gh-image {
+  width: 100%
 }
 
 /* ************************section-4************************** */
@@ -119,12 +199,22 @@ h1 {
   color: #464646;
 }
 
+#contact-right> p {
+  margin: 25px 0;
+}
+
 #contact-links-container {
   text-align: center;
+  margin: 30px 0;
 }
 
 .contact-img-container {
   display: inline-block;
+  width: 20%;
+}
+
+.contact-img {
+  width: 100%;
 }
 
 /* ************************section-1************************** */

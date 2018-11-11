@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width">
   <title>Allyson Short</title>
   <link href="main.css" rel="stylesheet" type="text/css" />
-  <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Cinzel+Decorative|KoHo|Poiret+One" rel="stylesheet">
 </head>
 <body>
   <main>
@@ -14,18 +14,20 @@
       <div>
         <h4 id="tag-line">Creating Stuff and Things | Learning each day</h4>
       </div>
-      <div>
-        <h1>Allyson Short</h1>
-        <div class=image-container>
+      <div id="name-container">
+        <h1 id="name">ALLYSON SHORT</h1>
+        <div id="name-image-container">
           <img src="/images/XXXXXXXXXXX" alt="XXXXXXXXXXX"/>
         </div>
       </div>
       <div class="navigation-container">
-        <a href="#section-2" class="link">About Me</a>
-        <img src="/images/hegagon" alt="hegagon"/>
-        <a href="#section-3" class="link">Projects</a>
-        <img src="/images/hegagon" alt="hegagon"/>
-        <a href="#section-4" class="link">Contact</a>
+        <div class= "navigation-links-container">
+          <a href="#section-2" class="link">About Me</a>
+          <img src="./images/hexagon.png" alt="hegagon" class="hex-img"/>
+          <a href="#section-3" class="link">Projects</a>
+          <img src="./images/hexagon.png" alt="hegagon" class="hex-img"/>
+          <a href="#section-4" class="link">Contact</a>
+        </div>
       </div>
     </div>
 
@@ -33,7 +35,9 @@
 
     <div class="section-container" id="section-2">
       <div class="left-section" id="about-me-left">
-        <h2>About Me</h2>
+        <div id="left-about-container">
+          <h2>About Me</h2>
+        <div>
       </div>
       <div class="right-section" id="about-me-right">
         <p>I’m a full stack software developer in Atlanta, GA </p>
@@ -51,41 +55,62 @@
 
     <div class="section-container" id="section-3">
       <div class="left-section" id="projects-left" >
-        <h2>Projects</h2>
-        <div id="project-mini-nav">
-          <a href="#project-1">Trade Tally</a>
-          <h2> | </h2>
-          <a href="#project-2">Crop Swap</a>
-          <h2> | </h2>
-          <a href="#project-3">TES</a>
+        <div id="projects-left-container">
+          <h2>Projects</h2>
+          <div id="project-mini-nav">
+            <a href="#project-1">Trade Tally</a>
+            <h2> | </h2>
+            <a href="#project-2">Crop Swap</a>
+            <h2> | </h2>
+            <a href="#project-3">TES</a>
         </div>
       </div>
+      </div>
       <div class="right-section" id="projects-right">
-        <div class="projects" id="project-1">
-          <a href="https://trade-tally-client.herokuapp.com" target="_blank"><img src="/images/trade-tally.png" alt="trade tally"/></a>
+        <div class="right-scroll-container">
+        <div class="project-container" id="project-1">
+          <div class="project-img-container">
+            <a href="https://trade-tally-client.herokuapp.com" target="_blank" id="test">
+              <img src="./images/trade-tally.png" class="project-image" alt="trade tally"/></a>
+          </div>
           <div class="project-description">
             <p> An app that helps you to record & track your service trades</p>
-            <img src='images/github-blk.png' alt='github link' />
+            <div class="gh-img-container">
+              <a href="https://github.com/oneEyedBunny/Trade-Tally-Client" target="_blank">
+                <img src='images/github.png' alt='github link' class="gh-image" /></a>
+            </div>
             <p>Built With: React/Redux, Enzyme/Jest, Node, Express, Mongo/Mongoose, Twilio </p>
           </div>
         </div>
-        <div class="projects" id="project-2">
-          <a href="https://crop-swap.herokuapp.com" target="_blank"><img src="/images/crop-swap.png" alt="crop swap"/></a>
+        <div class="project-container" id="project-2">
+          <div class="project-img-container">
+            <a href="https://crop-swap.herokuapp.com" target="_blank">
+              <img src="./images/crop-swap.png" class="project-image" alt="crop swap"/></a>
+          </div>
           <div class="project-description">
             <p> Crop Swap is designed to help people connect with their neighbors so they can swap excess fruits/veggies/herbs</p>
-            <img src='images/github-blk.png' alt='github link' />
+            <div class="gh-img-container">
+              <a href="https://github.com/oneEyedBunny/Crop-Swap" target="_blank">
+                <img src='images/github.png' alt='github link' class="gh-image" /></a>
+            </div>
             <p>Built With: Javascript/jQuery, Node, Express, Mongo, Mongoose, Mocha/Chai, JWT, Travis CI, Heroku, mLab  </p>
           </div>
         </div>
-        <div class="projects" id="project-3">
-          <a href="https://tes-travel-explore-sleep.herokuapp.com" target="_blank"><img src="/images/tes" alt="TES"/></a>
+        <div class="project-container" id="project-3">
+          <div class="project-img-container">
+            <a href="https://tes-travel-explore-sleep.herokuapp.com" target="_blank">
+              <img src="./images/tes.png" class="project-image" alt="TES"/></a>
+          </div>
           <div class="project-description">
             <p> TES helps you pick your AirBnb based on what cool things you want to stay near</p>
-            <img src='images/github-blk.png' alt='github link' />
+            <div class="gh-img-container">
+              <a href="https://github.com/oneEyedBunny/TES-Travel-Explore-Sleep" target="_blank">
+                <img src='images/github.png' alt='github link' class="gh-image" /></a>
+            </div>
             <p>Built With: Javascript, jQuery, Node, HTML/CSS</p>
           </div>
         </div>
-
+      </div> <!-- closes inner project container -->
       </div>
 
 
@@ -96,18 +121,20 @@
         <h2>Contact</h2>
       </div>
       <div class="right-section" id="contact-right">
-        <p>I’d love to talk about your project, please contact me at any of the following</p>
-        <h4>allyson.short@gmail.com</h4>
-        <h4>619-672-1185</h4>
-        <div id="contact-links-container">
-          <div class="contact-img-container">
-            <img src="images/github-blk.png" alt='github link' />
-          </div>
-          <div class="contact-img-container">
-            <img src="images/linkedin.png" alt='linkedin link' />
-          </div>
-          <div class="contact-img-container">
-            <a href="" ><img src="images/pdf.png" alt='resume dowload' /></a>
+        <div class="right-scroll-container">
+          <p>I’d love to talk about your project, please contact me at any of the following</p>
+          <h4>allyson.short@gmail.com</h4>
+          <h4>619-672-1185</h4>
+          <div id="contact-links-container">
+            <div class="contact-img-container">
+              <img src="images/github.png" alt='github link' class="contact-img"/>
+            </div>
+            <div class="contact-img-container">
+              <img src="images/linkedin.png" alt='linkedin link' class="contact-img"/>
+            </div>
+            <div class="contact-img-container">
+              <a href="" ><img src="images/pdf.png" alt='resume dowload' class="contact-img"/></a>
+            </div>
           </div>
         </div>
       </div>
