@@ -76,9 +76,14 @@ font-size: calc(14px + (20 - 14) * ((100vw - 320px) / (1000 - 320)));
   font-family: 'Poiret One', cursive;
 }
 
+.fixed {
+  position: fixed;
+  top: 0;
+}
+
 /* ************************section-1************************** */
 #section-1 {
-  background-color: #BFABAA;
+  background-color: #e0d1d0;
   color: #464646;
 }
 
@@ -119,7 +124,7 @@ font-size: calc(14px + (20 - 14) * ((100vw - 320px) / (1000 - 320)));
 }
 
 #about-me-right {
-  background-color: #BFABAA;
+  background-color: #e0d1d0;
   color: #464646;
   display: block;
 }
@@ -169,7 +174,7 @@ font-size: calc(14px + (20 - 14) * ((100vw - 320px) / (1000 - 320)));
 /* ************************section-3************************** */
 
 #projects-left {
-  background-color: #BFABAA;
+  background-color: #e0d1d0;
   color: #A5142D;
 }
 
@@ -196,6 +201,7 @@ font-size: calc(14px + (20 - 14) * ((100vw - 320px) / (1000 - 320)));
 
 .built {
   color: #A5142D;
+  font-weight: bold;
   display: inline;
 }
 
@@ -237,7 +243,7 @@ font-size: calc(14px + (20 - 14) * ((100vw - 320px) / (1000 - 320)));
 }
 
 #contact-right {
-  background-color: #BFABAA;
+  background-color: #e0d1d0;
   color: #464646;
 }
 
@@ -270,7 +276,7 @@ font-size: calc(14px + (20 - 14) * ((100vw - 320px) / (1000 - 320)));
 /* ************************section-1************************** */
 #section-5 {
   background-color: #464646;
-  color: #E0D1D0;
+  color: #BFABAA;
   /* position: absolute; */
 }
 
