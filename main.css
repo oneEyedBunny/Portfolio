@@ -41,7 +41,7 @@ font-size: calc(14px + (20 - 14) * ((100vw - 320px) / (1000 - 320)));
   min-height: 100vh;
 }
 
-.section-2, .section-3, .section-4 {
+#section-2, #section-3, #section-4 {
   display: flex;
 }
 
@@ -59,7 +59,7 @@ font-size: calc(14px + (20 - 14) * ((100vw - 320px) / (1000 - 320)));
 
  .right-section {
   height: 100vh;
-  /* overflow-y: scroll; */
+  overflow-y: scroll;
 }
 
 .right-scroll-container {
@@ -78,17 +78,17 @@ font-size: calc(14px + (20 - 14) * ((100vw - 320px) / (1000 - 320)));
 }
 
 /* ************************section-1************************** */
-.section-1 {
+#section-1 {
   background-color: #eae1e1;
   color: #464646;
   position: relative;
 }
 
-.section-1 div:first-child {
+#section-1 div:first-child {
   text-align: center;
 }
 
-.section-1::after {
+#section-1::after {
   content: "";
   height: 85vh;
   width: 100vw;
@@ -172,6 +172,7 @@ font-size: calc(14px + (20 - 14) * ((100vw - 320px) / (1000 - 320)));
 
 .learning h4 {
   display: inline-block;
+  margin-bottom: 40px;
 }
 
 .learning h4:first-child {
@@ -230,14 +231,26 @@ font-size: calc(14px + (20 - 14) * ((100vw - 320px) / (1000 - 320)));
   margin: auto;
 }
 
-.project-mini-nav > a {
+.project-mini-nav > ul {
+  list-style-type: none;
+  display: inline-block;
+  vertical-align: middle;
+  color: #464646;
+}
+
+.project-mini-nav  li {
+  display: inline-block;
+}
+
+.project-mini-nav  a {
   color: #464646;
   font-size: calc(12px + (17 - 12) * ((100vw - 320px) / (1000 - 320)));
 }
 
-.project-mini-nav > h2 {
-  display: inline-block;
-  vertical-align: middle;
+li + li::before {
+    content: " | ";
+    font-weight: bold;
+    color: #A5142D;
 }
 
 .project-image {
@@ -291,13 +304,13 @@ font-size: calc(14px + (20 - 14) * ((100vw - 320px) / (1000 - 320)));
 }
 
 /* ************************section-1************************** */
-.section-5 {
+#section-5 {
   background-color: #464646;
   color: #BFABAA;
   position: relative;
 }
 
-.section-5::after {
+#section-5::after {
   content: "";
   height: 100vh;
   width: 100vw;
