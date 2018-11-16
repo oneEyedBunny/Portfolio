@@ -89,7 +89,7 @@ font-size: calc(14px + (20 - 14) * ((100vw - 320px) / (1000 - 320)));
 
 #section-1::after {
   content: "";
-  height: 85vh;
+  height: 89vh;
   width: 100vw;
   position: absolute;
   top: 0;
