@@ -23,7 +23,6 @@ font-size: calc(20px + (35 - 20) * ((100vw - 320px) / (1000 - 320)));
 a {
   text-decoration: none;
   color: #A5142D;
-  padding: 0 10px;
 }
 
 .navigation-container {
@@ -79,7 +78,7 @@ font-size: calc(14px + (20 - 14) * ((100vw - 320px) / (1000 - 320)));
 
 /* ************************section-1************************** */
 #section-1 {
-  background-color: #eae1e1;
+  background-color: #EAE1E1;
   color: #464646;
   position: relative;
 }
@@ -90,18 +89,17 @@ font-size: calc(14px + (20 - 14) * ((100vw - 320px) / (1000 - 320)));
 
 #section-1::after {
   content: "";
-  height: 85vh;
+  height: 89vh;
   width: 100vw;
   position: absolute;
   top: 0;
   left: 0;
-  /* display: block; */
-  background: url('./images/heart.png');
+  background: url('./images/heart-anima.gif');
   background-repeat: no-repeat;
-  background-position: center;
-  background-size: 35%;
-  opacity: .2;
-  /* z-index: -1; */
+  background-position: center center;
+  background-size: 25%;
+  opacity: .6;
+  z-index: 1;
 }
 
 .tag-line {
@@ -116,13 +114,20 @@ font-size: calc(14px + (20 - 14) * ((100vw - 320px) / (1000 - 320)));
 
 .name-container {
   text-align: center;
-  margin-top: 280px;
+  /* margin-top: 280px;
+  position: relative;
+  z-index: 2;  */
 }
 
 .name {
   font-family: 'Poiret One', cursive;
-  font-size: 50px;
-  margin: auto;
+  font-size: calc(40px + (55 - 40) * ((100vw - 320px) / (1000 - 320)));
+  /* position: relative; */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
 }
 
 .hex-container {
@@ -141,7 +146,7 @@ font-size: calc(14px + (20 - 14) * ((100vw - 320px) / (1000 - 320)));
 }
 
 .about-me-right {
-  background-color: #eae1e1;
+  background-color: #EAE1E1;
   color: #464646;
   display: block;
 }
@@ -192,12 +197,12 @@ font-size: calc(14px + (20 - 14) * ((100vw - 320px) / (1000 - 320)));
 /* ************************section-3************************** */
 
 .projects-left {
-  background-color: #eae1e1;
+  background-color: #EEEEEE;
   color: #A5142D;
 }
 
 .projects-right {
-  background-color: #EEEEEE;
+  background-color: #EAE1E1;
   color: #464646;
 }
 
@@ -273,7 +278,7 @@ li + li::before {
 }
 
 .contact-right {
-  background-color: #eae1e1;
+  background-color: #EAE1E1;
   color: #464646;
 }
 
@@ -301,27 +306,4 @@ li + li::before {
 
 .contact-img {
   width: 100%;
-}
-
-/* ************************section-1************************** */
-#section-5 {
-  background-color: #464646;
-  color: #BFABAA;
-  position: relative;
-}
-
-#section-5::after {
-  content: "";
-  height: 100vh;
-  width: 100vw;
-  position: absolute;
-  top: 0;
-  left: 0;
-  /* display: block; */
-  background: url('./images/heartred.png');
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: 35%;
-  opacity: .2;
-  /* z-index: -1; */
 }
