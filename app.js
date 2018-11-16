@@ -14,11 +14,3 @@ $(function() {
         }
     });
 });
-
-$(document).ready(function(){
-    if($('#test').visible(true)) {
-        console.log("in view");
-    } else {
-        console.log("NOT in view");
-    }
-});
