@@ -307,26 +307,3 @@ li + li::before {
 .contact-img {
   width: 100%;
 }
-
-/* ************************section-1************************** */
-#section-5 {
-  background-color: #464646;
-  color: #BFABAA;
-  position: relative;
-}
-
-#section-5::after {
-  content: "";
-  height: 100vh;
-  width: 100vw;
-  position: absolute;
-  top: 0;
-  left: 0;
-  /* display: block; */
-  background: url('./images/heart.png');
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: 35%;
-  opacity: .2;
-  /* z-index: -1; */
-}
