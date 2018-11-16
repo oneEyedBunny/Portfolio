@@ -71,6 +71,7 @@ font-size: calc(14px + (20 - 14) * ((100vw - 320px) / (1000 - 320)));
   font-family: 'Poiret One', cursive;
 }
 
+/* facilitates scroll spy jQuery */
 .fixed {
   position: fixed;
   top: 0;
