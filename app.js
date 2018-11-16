@@ -1,15 +1,15 @@
 //function to help scrolling work no matter where cursor is
 $(function() {
-    var $nav = $('#projects-left');
+    var $section = $('.projects-left');
     console.log("testinggggg");
-    $nav.scrollspy({
-        min: $nav.offset().top,
+    $section.scrollspy({
+        min: $section.offset().top,
         onEnter: function(element, position) {
-            $nav.addClass('fixed');
+            $section.addClass('fixed');
             console.log('Ive entered');
         },
-        onLeave: function(element, position) {
-            $nav.removeClass('fixed');
+        onLeaveBottom: function(element, position) {
+            $section.removeClass('fixed');
             console.log('Ive left');
         }
     });
