@@ -1,8 +1,6 @@
-# Portfolio
-personal porfolio
 
 #Pending
-1. get animation working for main page
-1. need animation working for final page
-1. final page fixed for scroll 
-1. mobile first css
+1. get animation working final page
+1. final page fixed
+1. Fix scroll spy
+1. Add angel list profile link
