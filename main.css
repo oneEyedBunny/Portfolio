@@ -15,10 +15,6 @@ html {
   box-sizing: border-box;
 }
 
-h2 {
-font-size: calc(20px + (35 - 20) * ((100vw - 320px) / (1000 - 320)));
-}
-
 /* ************************universal************************** */
 a {
   text-decoration: none;
@@ -32,63 +28,42 @@ a {
   width: 100%;
 }
 
+h2 {
+font-size: calc(20px + (35 - 20) * ((100vw - 320px) / (1000 - 320)));
+}
+
 .link {
-font-size: calc(14px + (20 - 14) * ((100vw - 320px) / (1000 - 320)));
+  font-size: calc(14px + (20 - 14) * ((100vw - 320px) / (1000 - 320)));
 }
 
 .section-container {
   min-height: 100vh;
 }
 
-#section-2, #section-3, #section-4 {
-  display: flex;
+#section-2 {
+  /* display: flex; */
+  width: 50%;
+  float: right;
 }
 
-.left-section, .right-section {
-  /* padding: 20px; */
+.right-section {
   text-align: center;
-  flex: 1;
-  display: flex;
-}
-
-.left-section {
-  display: flex;
-  flex-direction: column;
-}
-
- .right-section {
-  height: 100vh;
-  overflow-y: scroll;
-}
-
-.right-scroll-container {
-  overflow-y: scroll;
-  padding: 15px;
-}
-
-.left-section h2 {
-  margin: auto;
-  font-family: 'Poiret One', cursive;
-}
-
-/* facilitates scroll spy jQuery */
-.fixed {
-  position: fixed;
-  top: 0;
 }
 
 /* ************************section-1************************** */
 #section-1 {
   background-color: #EAE1E1;
   color: #464646;
-  position: relative;
+  position: fixed;
+  padding: 20px;
+  width: 50%;
 }
 
 #section-1 div:first-child {
   text-align: center;
 }
 
-#section-1::after {
+/* #section-1::after {
   content: "";
   height: 89vh;
   width: 100vw;
@@ -101,7 +76,7 @@ font-size: calc(14px + (20 - 14) * ((100vw - 320px) / (1000 - 320)));
   background-size: 25%;
   opacity: .6;
   z-index: 1;
-}
+} */
 
 .tag-line {
   padding-top: 30px;
@@ -146,17 +121,16 @@ font-size: calc(14px + (20 - 14) * ((100vw - 320px) / (1000 - 320)));
   color: white;
 }
 
-.about-me-right {
-  background-color: #EAE1E1;
+#about-me-right {
   color: #464646;
-  display: block;
+  padding: 20px;
 }
 
-.about-me-right p:first-child {
+#about-me-right p:first-child {
   margin-top: 100px;
 }
 
-.about-me-right p {
+#about-me-right p {
   margin: 38px;
 }
 
@@ -172,8 +146,6 @@ font-size: calc(14px + (20 - 14) * ((100vw - 320px) / (1000 - 320)));
 .learning {
   margin-top: 100px;
   text-align: center;
-  /* position: relative;
-  bottom: 30px; */
 }
 
 .learning h4 {
@@ -190,25 +162,26 @@ font-size: calc(14px + (20 - 14) * ((100vw - 320px) / (1000 - 320)));
   margin: auto;
 }
 
-/* .left-about-container > h2 {
-  margin: auto;
-  flex: 1;
-} */
-
 /* ************************section-3************************** */
-
-.projects-left {
-  background-color: #EEEEEE;
-  color: #A5142D;
-}
-
-.projects-right {
-  background-color: #EAE1E1;
-  color: #464646;
+.projects-headline, .contact-me-headline {
+  background-color: #A5142D;
+  color: white;
+  padding: 20px;
+  font-size: calc(18px + (26 - 18) * ((100vw - 320px) / (1000 - 320)));
 }
 
 .project-container {
-  margin: 40px 15px 125px;
+  margin: 100px 0;
+}
+
+.project-name {
+  font-size: calc(18px + (26 - 18) * ((100vw - 320px) / (1000 - 320)));
+  font-weight: bold;
+  color:  #A5142D;
+}
+
+#projects-right {
+  color: #464646;
 }
 
 .project-img-container {
@@ -233,7 +206,7 @@ font-size: calc(14px + (20 - 14) * ((100vw - 320px) / (1000 - 320)));
   display: inline;
 }
 
-.projects-left-container {
+/* .projects-left-container {
   margin: auto;
 }
 
@@ -257,7 +230,7 @@ li + li::before {
     content: " | ";
     font-weight: bold;
     color: #A5142D;
-}
+} */
 
 .project-image {
   width: 100%;
@@ -273,30 +246,24 @@ li + li::before {
 }
 
 /* ************************section-4************************** */
-.contact-left {
-  background-color: #A5142D;
-  color: white;
-}
 
-.contact-right {
-  background-color: #EAE1E1;
+#contact-right {
   color: #464646;
+  height: 100vh;
 }
 
-.right-contact-container {
-  padding: 25px;
-}
-.right-contact-container p:first-child {
-  margin-top: 150px;
+.contact-me-headline {
+  margin: 100px 0;
+
 }
 
-.right-contact-container > h4 {
+#contact-right > h4 {
   margin: 45px 0;
 }
 
 .contact-links-container {
   text-align: center;
-  margin: 30px 0;
+  margin: 70px 0;
 }
 
 .contact-img-container {
