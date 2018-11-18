@@ -41,7 +41,6 @@ font-size: calc(20px + (35 - 20) * ((100vw - 320px) / (1000 - 320)));
 }
 
 #section-2 {
-  /* display: flex; */
   width: 50%;
   float: right;
 }
@@ -63,20 +62,20 @@ font-size: calc(20px + (35 - 20) * ((100vw - 320px) / (1000 - 320)));
   text-align: center;
 }
 
-/* #section-1::after {
+#section-1::after {
   content: "";
-  height: 89vh;
-  width: 100vw;
+  height: 92vh;
+  width: 50vw;
   position: absolute;
   top: 0;
   left: 0;
   background: url('./images/heart-anima.gif');
   background-repeat: no-repeat;
   background-position: center center;
-  background-size: 25%;
+  background-size: 40%;
   opacity: .6;
   z-index: 1;
-} */
+}
 
 .tag-line {
   padding-top: 30px;
@@ -90,15 +89,11 @@ font-size: calc(20px + (35 - 20) * ((100vw - 320px) / (1000 - 320)));
 
 .name-container {
   text-align: center;
-  /* margin-top: 280px;
-  position: relative;
-  z-index: 2;  */
 }
 
 .name {
   font-family: 'Poiret One', cursive;
   font-size: calc(40px + (55 - 40) * ((100vw - 320px) / (1000 - 320)));
-  /* position: relative; */
   position: absolute;
   top: 50%;
   left: 50%;
