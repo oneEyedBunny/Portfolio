@@ -33,7 +33,7 @@ font-size: calc(20px + (35 - 20) * ((100vw - 320px) / (1000 - 320)));
 }
 
 .link {
-  font-size: calc(14px + (20 - 14) * ((100vw - 320px) / (1000 - 320)));
+  font-size: calc(12px + (20 - 12) * ((100vw - 320px) / (1000 - 320)));
 }
 
 .section-container {
@@ -93,7 +93,7 @@ font-size: calc(20px + (35 - 20) * ((100vw - 320px) / (1000 - 320)));
 
 .name {
   font-family: 'Poiret One', cursive;
-  font-size: calc(40px + (55 - 40) * ((100vw - 320px) / (1000 - 320)));
+  font-size: calc(25px + (55 - 25) * ((100vw - 320px) / (1000 - 320)));
   position: absolute;
   top: 50%;
   left: 50%;
