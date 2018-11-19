@@ -15,10 +15,6 @@ html {
   box-sizing: border-box;
 }
 
-h2 {
-font-size: calc(20px + (35 - 20) * ((100vw - 320px) / (1000 - 320)));
-}
-
 /* ************************universal************************** */
 a {
   text-decoration: none;
@@ -30,58 +26,37 @@ a {
   bottom: 30px;
   text-align: center;
   width: 100%;
+  z-index: 3;
+}
+
+h2 {
+font-size: calc(20px + (35 - 20) * ((100vw - 320px) / (1000 - 320)));
 }
 
 .link {
-font-size: calc(14px + (20 - 14) * ((100vw - 320px) / (1000 - 320)));
+  font-size: calc(12px + (20 - 12) * ((100vw - 320px) / (1000 - 320)));
 }
 
 .section-container {
   min-height: 100vh;
 }
 
-#section-2, #section-3, #section-4 {
-  display: flex;
+#section-2 {
+  width: 50%;
+  float: right;
 }
 
-.left-section, .right-section {
-  /* padding: 20px; */
+.right-section {
   text-align: center;
-  flex: 1;
-  display: flex;
-}
-
-.left-section {
-  display: flex;
-  flex-direction: column;
-}
-
- .right-section {
-  height: 100vh;
-  overflow-y: scroll;
-}
-
-.right-scroll-container {
-  overflow-y: scroll;
-  padding: 15px;
-}
-
-.left-section h2 {
-  margin: auto;
-  font-family: 'Poiret One', cursive;
-}
-
-/* facilitates scroll spy jQuery */
-.fixed {
-  position: fixed;
-  top: 0;
 }
 
 /* ************************section-1************************** */
 #section-1 {
   background-color: #EAE1E1;
   color: #464646;
-  position: relative;
+  position: fixed;
+  padding: 20px;
+  width: 50%;
 }
 
 #section-1 div:first-child {
@@ -90,15 +65,15 @@ font-size: calc(14px + (20 - 14) * ((100vw - 320px) / (1000 - 320)));
 
 #section-1::after {
   content: "";
-  height: 89vh;
-  width: 100vw;
+  height: 100vh;
+  width: 50vw;
   position: absolute;
   top: 0;
   left: 0;
   background: url('./images/heart-anima.gif');
   background-repeat: no-repeat;
   background-position: center center;
-  background-size: 25%;
+  background-size: 40%;
   opacity: .6;
   z-index: 1;
 }
@@ -115,15 +90,11 @@ font-size: calc(14px + (20 - 14) * ((100vw - 320px) / (1000 - 320)));
 
 .name-container {
   text-align: center;
-  /* margin-top: 280px;
-  position: relative;
-  z-index: 2;  */
 }
 
 .name {
   font-family: 'Poiret One', cursive;
-  font-size: calc(40px + (55 - 40) * ((100vw - 320px) / (1000 - 320)));
-  /* position: relative; */
+  font-size: calc(25px + (55 - 25) * ((100vw - 320px) / (1000 - 320)));
   position: absolute;
   top: 50%;
   left: 50%;
@@ -146,17 +117,16 @@ font-size: calc(14px + (20 - 14) * ((100vw - 320px) / (1000 - 320)));
   color: white;
 }
 
-.about-me-right {
-  background-color: #EAE1E1;
+#about-me-right {
   color: #464646;
-  display: block;
+  padding: 20px;
 }
 
-.about-me-right p:first-child {
+#about-me-right p:first-child {
   margin-top: 100px;
 }
 
-.about-me-right p {
+#about-me-right p {
   margin: 38px;
 }
 
@@ -172,8 +142,6 @@ font-size: calc(14px + (20 - 14) * ((100vw - 320px) / (1000 - 320)));
 .learning {
   margin-top: 100px;
   text-align: center;
-  /* position: relative;
-  bottom: 30px; */
 }
 
 .learning h4 {
@@ -190,25 +158,27 @@ font-size: calc(14px + (20 - 14) * ((100vw - 320px) / (1000 - 320)));
   margin: auto;
 }
 
-/* .left-about-container > h2 {
-  margin: auto;
-  flex: 1;
-} */
-
 /* ************************section-3************************** */
-
-.projects-left {
-  background-color: #EEEEEE;
-  color: #A5142D;
-}
-
-.projects-right {
-  background-color: #EAE1E1;
-  color: #464646;
-}
-
 .project-container {
-  margin: 40px 15px 125px;
+  margin-bottom: 100px;
+}
+
+.projects-headline {
+  font-family: 'Poiret One', cursive;
+  background-color: #A5142D;
+  color: white;
+  padding: 5px;
+  font-size: calc(18px + (26 - 18) * ((100vw - 320px) / (1000 - 320)));
+}
+
+.project-name {
+  font-size: calc(18px + (26 - 18) * ((100vw - 320px) / (1000 - 320)));
+  font-weight: bold;
+  color:  #A5142D;
+}
+
+#projects-right {
+  color: #464646;
 }
 
 .project-img-container {
@@ -216,7 +186,7 @@ font-size: calc(14px + (20 - 14) * ((100vw - 320px) / (1000 - 320)));
 }
 
 .project-description {
-  background-color: #464646;
+  background-color: #636060;
   color: white;
   padding: 25px;
   margin: 5px;
@@ -233,8 +203,9 @@ font-size: calc(14px + (20 - 14) * ((100vw - 320px) / (1000 - 320)));
   display: inline;
 }
 
-.projects-left-container {
-  margin: auto;
+.projects-headline-container {
+  background-color: #A5142D;
+  padding: 5px;
 }
 
 .project-mini-nav > ul {
@@ -249,14 +220,14 @@ font-size: calc(14px + (20 - 14) * ((100vw - 320px) / (1000 - 320)));
 }
 
 .project-mini-nav  a {
-  color: #464646;
+  color: white;
+  /* color: #464646; */
   font-size: calc(12px + (17 - 12) * ((100vw - 320px) / (1000 - 320)));
 }
 
 li + li::before {
-    content: " | ";
-    font-weight: bold;
-    color: #A5142D;
+  content: " | ";
+  font-weight: bold;
 }
 
 .project-image {
@@ -273,30 +244,28 @@ li + li::before {
 }
 
 /* ************************section-4************************** */
-.contact-left {
+
+#contact-right {
+  color: #464646;
+  height: 100vh;
+}
+
+.contact-me-headline {
+  margin: 100px 0;
+  font-family: 'Poiret One', cursive;
   background-color: #A5142D;
   color: white;
+  padding: 20px;
+  font-size: calc(18px + (26 - 18) * ((100vw - 320px) / (1000 - 320)));
 }
 
-.contact-right {
-  background-color: #EAE1E1;
-  color: #464646;
-}
-
-.right-contact-container {
-  padding: 25px;
-}
-.right-contact-container p:first-child {
-  margin-top: 150px;
-}
-
-.right-contact-container > h4 {
+#contact-right > h4 {
   margin: 45px 0;
 }
 
 .contact-links-container {
   text-align: center;
-  margin: 30px 0;
+  margin: 70px 0;
 }
 
 .contact-img-container {

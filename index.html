@@ -7,7 +7,6 @@
   <link href="main.css" rel="stylesheet" type="text/css" />
   <link href="media.css" rel="stylesheet" type="text/css" />
   <link href="https://fonts.googleapis.com/css?family=Cinzel+Decorative|KoHo|Poiret+One" rel="stylesheet">
-  <!-- ()<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet"/> -->
   <link rel="icon" type="image/png" href="./images/heartred.png"/>
 </head>
 <body>
@@ -24,15 +23,15 @@
       </div>
       <div class="navigation-container">
         <div class= "navigation-links-container">
-          <a href="#section-2" class="link">About Me</a>
+          <a href="#about-me-right" class="link">About Me</a>
           <div class="hex-container">
             <img src="./images/hexagon.png" alt="hegagon" class="hex-img"/>
           </div>
-          <a href="#section-3" class="link">Projects</a>
+          <a href="#projects-right" class="link">Projects</a>
           <div class="hex-container">
             <img src="./images/hexagon.png" alt="hegagon" class="hex-img"/>
           </div>
-          <a href="#section-4" class="link">Contact</a>
+          <a href="#contact-right" class="link">Contact</a>
         </div>
       </div>
     </div>
@@ -40,17 +39,11 @@
 
 
     <div class="section-container" id="section-2">
-      <div class="left-section about-me-left">
-        <div class="left-about-container">
-          <h2>About Me</h2>
-        </div>
-      </div>
-      <div class="right-section about-me-right">
-        <div class="right-scroll-container">
+      <div class="right-section" id="about-me-right">
           <div class="octagon-img-container">
             <img src="./images/aspic.png" alt="image of me"/>
           </div>
-          <p>I’m a full stack javascript developer based in Atlanta, GA.
+          <p>Hello! I’m a full stack javascript developer based in Atlanta, GA.
             I have always had a passion for learning new things and solving problems.</p>
           <p>Prior to coding, I was a financial analyst in the tech sector and I worked
             extensively on financial software systems. This exposure to systems
@@ -65,16 +58,10 @@
             <h4>React Native</h4>
           </div>
        </div>
-      </div>
-    </div>
 
-
-
-
-    <div class="section-container" id="section-3">
-      <div class="left-section projects-left">
-        <div class="projects-left-container">
-          <h2>Projects</h2>
+      <div class="right-section" id="projects-right">
+        <div class="projects-headline-container">
+          <h3 class="projects-headline">Projects</h3>
           <div class="project-mini-nav">
             <ul>
               <li>
@@ -85,17 +72,11 @@
                 <a href="#project-3">TES</a></li>
             </ul>
           </div>
-      </div>
-      </div>
-      <div class="right-section projects-right">
-        <div class="right-scroll-container">
+        </div>
         <div class="project-container" id="project-1">
-          <div class="project-img-container">
-            <a href="https://trade-tally-client.herokuapp.com" target="_blank">
-              <img src="./images/trade-tally2.png" class="project-image" alt="trade tally"/></a>
-          </div>
           <div class="project-description">
-            <p> Trade Tally helps you to record & track your service trades, so you know where your balance stands</p>
+            <h3 class="project-name"> Trade Tally </h3>
+            <p> A responsive app that helps you to record & track your service trades, so you know where your balance stands</p>
             <div class="gh-img-container">
               <a href="https://github.com/oneEyedBunny/Trade-Tally-Client" target="_blank">
                 <img src='images/github.png' alt='github link' class="gh-image" /></a>
@@ -103,14 +84,17 @@
             <p class="built">Built With: </p>
             <p class="build-list">React/Redux, Enzyme/Jest, Node, Express, Mongo/Mongoose, Twilio </p>
           </div>
-        </div>
-        <div class="project-container" id="project-2">
+
           <div class="project-img-container">
-            <a href="https://crop-swap.herokuapp.com" target="_blank">
-              <img src="./images/crop-swap.png" class="project-image" alt="crop swap"/></a>
+            <a href="https://trade-tally-client.herokuapp.com" target="_blank">
+              <img src="./images/trade-tally2.png" class="project-image" alt="trade tally"/></a>
           </div>
+        </div>
+
+        <div class="project-container" id="project-2">
           <div class="project-description">
-            <p> Crop Swap is designed to help people connect with their neighbors so they can swap excess fruits/veggies/herbs</p>
+            <h3 class="project-name">Crop Swap</h3>
+            <p> An app designed to help people connect with their neighbors so they can swap excess fruits/veggies/herbs</p>
             <div class="gh-img-container">
               <a href="https://github.com/oneEyedBunny/Crop-Swap" target="_blank">
                 <img src='images/github.png' alt='github link' class="gh-image" /></a>
@@ -118,14 +102,16 @@
             <p class="built">Built With: </p>
             <p class="build-list">Javascript/jQuery, Node, Express, Mongo, Mongoose, Mocha/Chai, JWT, Travis CI, Heroku, mLab  </p>
           </div>
-        </div>
-        <div class="project-container" id="project-3">
           <div class="project-img-container">
-            <a href="https://tes-travel-explore-sleep.herokuapp.com" target="_blank">
-              <img src="./images/tes.png" class="project-image" alt="TES"/></a>
+            <a href="https://crop-swap.herokuapp.com" target="_blank">
+              <img src="./images/crop-swap.png" class="project-image" alt="crop swap"/></a>
           </div>
+        </div>
+
+        <div class="project-container" id="project-3">
           <div class="project-description">
-            <p> TES helps you pick your AirBnb based on what cool things you want to stay near</p>
+            <h3 class="project-name">TES</h3>
+            <p> an app that helps you pick your AirBnb based on what cool things you want to stay near</p>
             <div class="gh-img-container">
               <a href="https://github.com/oneEyedBunny/TES-Travel-Explore-Sleep" target="_blank">
                 <img src='images/github.png' alt='github link' class="gh-image" /></a>
@@ -133,44 +119,40 @@
             <p class="built">Built With: </p>
             <p class="build-list">Javascript, jQuery, Node, HTML/CSS</p>
           </div>
+          <div class="project-img-container">
+            <a href="https://tes-travel-explore-sleep.herokuapp.com" target="_blank">
+              <img src="./images/tes.png" class="project-image" alt="TES"/></a>
+          </div>
         </div>
-      </div> <!-- closes inner project container -->
+
       </div>
 
-
-
-    </div>
-    <div class="section-container" id="section-4">
-      <div class="left-section contact-left" >
-        <h2>Contact</h2>
-      </div>
-      <div class="right-section contact-right">
-        <div class="right-contact-container">
+      <div class="right-section" id="contact-right">
+          <h3 class="contact-me-headline"> Contact Me </h3>
           <p>Lets talk about building something together!</p>
           <p>Contact me at any of the following</p>
           <h4>allyson.short@gmail.com</h4>
           <h4>619-672-1185</h4>
           <div class="contact-links-container">
             <div class="contact-img-container">
-              <a href="https://github.com/oneEyedBunny" target="_blank" >
-              <img src="images/github.png" alt='github link' class="contact-img"/></a>
-            </div>
-            <div class="contact-img-container">
               <a href="https://www.linkedin.com/in/allyson-short/" target="_blank" >
               <img src="images/linkedin.png" alt='linkedin link' class="contact-img"/></a>
+            </div>
+            <div class="contact-img-container">
+              <a href="https://github.com/oneEyedBunny" target="_blank" >
+              <img src="images/github.png" alt='github link' class="contact-img"/></a>
             </div>
             <div class="contact-img-container">
               <a href="./images/allyson-short-resume.pdf" target="_blank" ><img src="images/pdf.png" alt='resume dowload' class="contact-img"/></a>
             </div>
           </div>
-        </div>
       </div>
-    </div>
+
+  </div>
 
 
   </main>
 <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-<script src="jquery-scrollspy.min.js" type="text/javascript"></script>
 <script src="app.js" type="text/javascript"></script>
 </body>
 </html>
