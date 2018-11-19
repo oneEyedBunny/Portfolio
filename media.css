@@ -26,6 +26,7 @@
   .navigation-container {
     bottom: 10px;
     width: 90%;
+    z-index: 3;
   }
 
   #about-me-right p {
