@@ -18,4 +18,3 @@ Built with JavaScript, HTML5, and CSS3. Site hosted via Netlify.
 
 #Pending
 1. Fix scroll spy
-1. Add angel list profile link
